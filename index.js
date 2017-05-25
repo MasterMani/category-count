@@ -1,4 +1,9 @@
-import sites from './site-list'
+import settings from './site-list'
+import Fetcher from './fetch.js'
 
-console.log(sites)
+const categoryUrl = settings.startingUrl
+const call = function(data){
+  console.log(data)
+}
+console.log(Fetcher.fetch(categoryUrl, call))
 
